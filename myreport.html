@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>...</title>
+</head>
+<body>
+    <h2>{{ title }}</h2>
+	 <h3> {{ INTRO }} </h3>
+	 
+	<br>
+	
+	<h4> {{ TABLE_DESC }} </h4>
+	{{ TABLE }}
+	 
+	<br>
+	<br>
+	
+	<h4> {{ IMAGE_DESC }} </h4>
+	
+	<img src="file:{{ IMAGE }}">
+	 
+	<br>	 
+{% block layout_style %}
+<style> @page { size: letter landscape; margin: 2.5cm; } </style>
+{% endblock %}
+</body>
+</html>
